@@ -130,7 +130,12 @@ a:focus {
 }
 
 /* Hero */
-
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url(../img/logo-linear.png);
+  background-size: cover;
+}
 #hero {
   background-image: url(../img/bg-large.jpg);
   background-repeat: no-repeat;
