@@ -537,12 +537,6 @@ p {
   }
 }
 
-.tm-container-who {
-  max-width: 1290px;
-}
-.tm-container-what {
-  max-width: 1290px;
-}
 
 @media (max-width: 991px) {
   .tm-intro-text-container {
