@@ -179,7 +179,6 @@ a:focus {
 .tm-hero-text-container-inner {
   margin-top: -90px;
   text-align: center;
-  margin: 0 auto;
   display: flex;
   flex-flow: column;
   justify-content: center;
