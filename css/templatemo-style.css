@@ -74,7 +74,7 @@ a:focus {
 
 .tm-navbar.scroll {
   background-color: white;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px transparent #e9ecef;
 }
 
 .navbar-brand {
@@ -130,9 +130,14 @@ a:focus {
 }
 
 /* Hero */
-
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url(../img/logo-linear.png);
+  background-size: cover;
+}
 #hero {
-  background-image: url(../img/the-town-bg-01.jpg);
+  background-image: url(../img/bg-large.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -172,7 +177,7 @@ a:focus {
 }
 
 .tm-hero-text-container-inner {
-  margin-top: -90px;
+  margin-top: -80px;
 }
 
 .tm-hero-title {
@@ -416,7 +421,7 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: url(../img/the-town-bg-02.jpg);
+  background-image: url(../img/bg-largered.jpg);
   background-position: center;
   background-repeat: no-repeat;
   min-height: 850px;
@@ -460,7 +465,7 @@ figure.effect-honey:hover h2 i {
 .tm-input {
   padding: 8px 25px;
   border-radius: 3px;
-  border: 1px solid white;
+  border: 1px solid rgb(15, 15, 15);
   background: transparent;
   color: white;
 }
@@ -513,8 +518,8 @@ p {
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -531,6 +536,7 @@ p {
     max-width: 1063px;
   }
 }
+
 
 @media (max-width: 991px) {
   .tm-intro-text-container {
@@ -560,7 +566,7 @@ p {
   }
 
   .navbar-nav {
-    max-width: 200px;
+    max-width: 400px;
     text-align: right;
   }
 
@@ -597,4 +603,19 @@ p {
     margin-left: 0;
     margin-top: 20px;
   }
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
