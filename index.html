@@ -1,3 +1,9 @@
+<?php
+if($_POST["message"]) {
+mail("your@email.address", "Here is the subject line",
+$_POST["insert your message here"]. "From: an@email.address");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -286,7 +292,7 @@
 
 							to book please enter the form below:
 						</p>
-						<form action="mailto:marcvn.scouts@gmail.com"
+						<form action="email.php"
 						method="POST"
 						enctype="multipart/form-data"
 						name="EmailForm">
