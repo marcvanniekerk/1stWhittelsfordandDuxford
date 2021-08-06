@@ -1,17 +1,18 @@
 <?php
-// the message
-$msg = "First line of text\nSecond line of text";
+if(isset($_POST["submit"])) {
+$recipient = "marcvn.scouts@gmail.com"; //my email
+echo $subject = 'Email message from Point Plumbing';
+echo $name = $_POST ["yourName"];
+echo $email = $_POST["yourEmail"];
+echo $phone = $_POST["yourPhone"];
+echo $location = $_POST["yourLocate"];
+echo  $message = $_POST["yourMessage"];
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+ $mailBody="Name: $name\nEmail: $email\n\n$message"; 
 
-// send email
-mail("marcvn.scouts@gmail.com","My subject",$msg);
-?>
+ mail($recipient, $subject, $mailBody, "From: $name <$email>");
 
-<?php
-if($_POST["message"]) {
-mail("your@email.address", "Here is the subject line",
-$_POST["insert your message here"]. "From: an@email.address");
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
+
 }
 ?>

@@ -1,9 +1,4 @@
-<?php
-if($_POST["message"]) {
-mail("your@email.address", "Here is the subject line",
-$_POST["insert your message here"]. "From: an@email.address");
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -292,16 +287,52 @@ $_POST["insert your message here"]. "From: an@email.address");
 
 							to book please enter the form below:
 						</p>
-						<form action="email.php"
-						method="POST"
-						enctype="multipart/form-data"
-						name="EmailForm">
-						Name:<br>
-						<input type="text" size="19″ name="ContactName"><br><br>
-						Message:<br> <textarea name="ContactCommentt" rows="6″ cols="20″></textarea>
-						<br>
-						<br>
-						<input type="submit"  value="Submit"></form>
+						<form action="email.php" method="post" id="spaceing" data-abide>
+							<div class="form-bg">
+								<div class="row">
+									<div id="name" class="large-6 medium-6 small-12 columns">
+										<label> <h5>Name</h5>
+											<input type="text" name="yourName" placeholder="What is you're name?"></input>
+										</label>
+									</div>
+					
+									<div id="email" class="large-6 medium-6 small-12 columns">
+										<label><h5>Email</h5>
+											<input type="email" name="yourEmail" placeholder="Please enter in you're email."required></input>
+										</label>
+										<small class="error">An email Address is required.</small>
+									</div>
+								</div>
+					
+									<div class="row">
+										<div id="phone"class="large-6 medium-6 small-12 columns">
+											<label><h5>Phone</h5>
+												<input type="text" name="yourPhone" placeholder="Please enter you're phone number."></input>
+											</label>
+										</div>
+					
+										<div id="location" class="large-6 medium-6 small-12 columns">
+											<label><h5>Location</h5>
+												<input type="text" name="yourLocate" placeholder="Where on Oahu are you currently living?"></input>
+											</label>
+										</div>
+									</div>
+					
+									<div class="row">
+										<div id="message-area" class="large-12 medium-12 small-12 columns">
+											<label><h5>Message</h5>
+												<textarea id="message" name="yourMessage" placeholder="Please tell us about you're plumbing issues."></textarea>
+											</label>
+										</div>
+									</div>
+					
+								<div class="row">
+									<div id="submit" class="large-3 medium-3 small-3 columns">
+										<button name="submit" type="submit">Submit</button>
+									</div>
+								</div>
+							</div>
+						</form>
 					  			
 					</div>
 			 	 </div>
