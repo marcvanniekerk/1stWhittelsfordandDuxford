@@ -74,7 +74,7 @@ a:focus {
 
 .tm-navbar.scroll {
   background-color: white;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px transparent #e9ecef;
 }
 
 .navbar-brand {
@@ -465,7 +465,7 @@ figure.effect-honey:hover h2 i {
 .tm-input {
   padding: 8px 25px;
   border-radius: 3px;
-  border: 1px solid white;
+  border: 1px solid rgb(15, 15, 15);
   background: transparent;
   color: white;
 }
