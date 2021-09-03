@@ -40,6 +40,9 @@ a:focus {
 .tm-section-pad-top {
   padding-top: 110px;/* 135 default*/
 }
+.tm-section-pad-topmin {
+  padding-top: 10px;/* 135 default*/
+}
 
 .tm-text-primary {
   color: #3496d8;
