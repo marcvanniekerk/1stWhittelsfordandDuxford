@@ -147,6 +147,14 @@ a:focus {
   position: relative;
 }
 
+#herosmall {
+  background-image: url(../img/bg-large.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 700px;
+  position: relative;
+}
+
 @media (min-height: 830px) {
   #hero {
     background-position: center -210px;
@@ -256,6 +264,15 @@ a:focus {
   padding-bottom: 120px;
 }
 
+.tm-gallery-images {
+  padding-top: 70px;
+  padding-bottom: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+
 .tm-gallery-item {
   margin: 0 15px;
 }
@@ -293,6 +310,20 @@ a:focus {
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+}
+
+.centerbutton{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.centerbutton2{
+  display: flex;
+  justify-content: center;
 }
 
 .grid figure img {
