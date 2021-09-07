@@ -139,7 +139,7 @@ a:focus {
   background: url(../img/logo-linear.png);
   background-size: cover;
 }
-#hero {
+#home {
   background-image: url(../img/bg-large.jpg);
   background-repeat: no-repeat;
   height: 100vh;
@@ -156,25 +156,25 @@ a:focus {
 }
 
 @media (min-height: 830px) {
-  #hero {
+  #home {
     background-position: center -210px;
   }
 }
 
 @media (min-height: 680px) and (max-height: 829px) {
-  #hero {
+  #home {
     background-position: center -300px;
   }
 }
 
 @media (min-height: 500px) and (max-height: 679px) {
-  #hero {
+  #home {
     background-position: center -400px;
   }
 }
 
 @media (max-height: 499px) {
-  #hero {
+  #home {
     background-position: center -450px;
   }
 }
@@ -188,7 +188,7 @@ a:focus {
 }
 
 .tm-hero-text-container-inner {
-  margin-top: -80px;
+  margin-top: -120px;
 }
 
 .tm-hero-title {
