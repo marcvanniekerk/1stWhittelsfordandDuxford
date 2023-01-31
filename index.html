@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/templatemo-style.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="swiper.min.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213769274-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -693,8 +695,92 @@
             </div>
         </div>
           </div>
+          <!-- <div class="row">
+        <div class = "swiper-container">
+          <p class="text-center mb-4 tm-intro-text" style="color: rgb(255,255,255);">
+            Videos<br></p> -->
+
+          <!-- <div class="swiper-wrapper">
+            <div class = "swiper-slide">
+              <div class ="videobox">
+                <video autoplay="" muted loop="" id="explorers" class="video" controls="">
+                    <source src="img/Explorer_pics/video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+          </div> -->
+
+        </div>
       </div>
+            <!-- <div class="mx-auto tm-gallery-container" style="padding-right: 80px;">
+              <p class="text-center mb-4 tm-intro-text" style="color: rgb(255,255,255);">
+                Videos<br></p>
+                <div class="grid tm-gallery" >
+
+                <iframe id="video" width="480" height="272" src="img/Explorer_pics/video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+                </div>
+            </div> -->
+
+        </div>
+
     </section>
+    <!-- <section id="video" class="tm-section-pad-top" style="background-color:rgb(0,184,164) ;">
+      <div class="container tm-container-gallery">
+      <div class="videocontainer"  >
+        <div class="vidrow">
+          <!-- <div class = "vidcol">
+            <div class="feature-img">
+                <img src="img/Explorer_pics/Explorers1.jpeg" width="100%">
+                <img src="img/play.png" class="play-btn">
+            </div>
+          </div> -->
+          <!--<div class="vidcol">-->
+              <!-- <div class="vidsmall-img-row">
+                <div class="vidsmall-img">
+                  <img src="img/logo30percent.png">
+                  <img src="img/play.png" class="play-btn">
+                </div>
+                <p>1st video testing this and it needs image max sizing potentially to scale</p>
+                <div class="vidsmall-img">
+                  <img src="img/logo30percent.png">
+                  <img src="img/play.png" class="play-btn">
+                </div>
+                <p>11st video testing this and it needs image max sizing potentially to scale</p>
+                <div class="vidsmall-img">
+                  <img src="img/logo30percent.png">
+                  <img src="img/play.png" class="play-btn">
+                </div>
+                <p>1st video testing this and it needs image max sizing potentially to scale</p>
+              </div>
+              <div class="vidsmall-img-row">
+                <div class="vidsmall-img">
+                  <img src="img/logo30percent.png">
+                  <img src="img/play.png" class="play-btn">
+                </div>
+                <p>1st video!</p>
+              </div>
+              <div class="vidsmall-img-row">
+                <div class="vidsmall-img">
+                  <img src="img/Explorer_pics/Explorers1.jpeg">
+                  <img src="img/play.png" class="play-btn" onclick="playVideo('img/Explorer_pics/Video.mp4')">
+                </div>
+                <p>1st video!</p>
+              </div> -->
+          <!--</div>-->
+
+        <!-- </div>
+      </div>
+
+      <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+          <source src="img/Explorer_pics/Video.mp4" type="video/mp4">
+        </video>
+        <img src="img/close.png" class="close-btn" onclick="stopVideo()">
+      </div>
+    </div>
+    </section> --> -->
 
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
@@ -798,7 +884,22 @@
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script>
+
+
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo() {
+          videoPlayer.style.display= "none";
+            }
+        function playVideo(file){
+          myVideo.src = file;
+          videoPlayer.style.display = "block";
+        }
+
+
 
       function getOffSet(){
         var _offset = 450;
@@ -945,5 +1046,26 @@
         });
       });
     </script>
+    <script type="text/javascript" src="swiper.min.js"></script>
+     <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
   </body>
 </html>

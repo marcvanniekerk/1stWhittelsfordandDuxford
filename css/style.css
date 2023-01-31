@@ -1,0 +1,47 @@
+ body{
+    margin: 0;
+    padding: 0;
+ }
+
+ .swiper-container{
+
+    width: 100%;
+
+ }
+
+ .swiper-slide{
+
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 420px;
+    border-radius: 10px;
+ }
+
+.swiper-slide .videobox{
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    margin-left: -1px;
+    border-radius: 10px;
+}
+
+.swiper-slide{
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+.swiper-slide{
+margin: 0;
+padding: 0;
+
+}
+
+.video{
+    width: 380px;
+    height: cover;
+    margin-top: -20px;
+    margin-left: -50px;
+    cursor: pointer;
+}
