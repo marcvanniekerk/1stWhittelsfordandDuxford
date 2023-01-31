@@ -653,3 +653,23 @@ p {
   width:100%;
   position:absolute;
 }
+
+/*---------------------------------------
+  SOCIAL ICON
+-----------------------------------------*/
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-icons i {
+  font-size: 50px;
+  margin: 5px;
+}
+
+.social-icons span {
+  display:inline-block;
+  text-align: center;
+}

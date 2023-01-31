@@ -54,10 +54,12 @@
 }
 
 .sidebar-social a span{
+  text-align: right;
+  margin-left: 10px;
   color:black;
   font-size:20px;
   padding:5px 0 10px 0;
-  display:block;
+  display:inline-block;
   text-transform:uppercase;
   font-family:'Josefin Sans';
   letter-spacing:1px;
