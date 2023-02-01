@@ -140,7 +140,7 @@ a:focus {
   background-size: cover;
 }
 #home {
-  background-image: url(../img/stock/bg-large.jpg);
+  background-image: url(../img/Stock/bg-large.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 375px;
@@ -148,7 +148,7 @@ a:focus {
 }
 
 #herosmall {
-  background-image: url(../img/stock/bg-large.jpg);
+  background-image: url(../img/Stock/bg-large.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   max-height: 700px;
@@ -455,7 +455,7 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: url(../img/stock/bg-largered.jpg);
+  background-image: url(../img/Stock/bg-largered.jpg);
   background-position: center;
   background-repeat: no-repeat;
   min-height: 850px;
