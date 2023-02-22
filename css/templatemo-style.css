@@ -132,6 +132,41 @@ a:focus {
   color: #8f8f8f;
 }
 
+ /* Style for the dropdown menu */
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #efefef;
+  min-width: 160px;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style for the dropdown options */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown option on hover */
+.dropdown-content a:hover {
+  background-color: #efefef;
+}
+
 /* Hero */
 .header-img {
   width: 100%;
