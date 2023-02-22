@@ -29,56 +29,40 @@
     </script>
   </head>
   <body>
-    <section id="gallery" style="background-color:rgb(116,20,220) ;">
-    <div class="container tm-container-gallery">
-          <div class="row justify-content-center" id="cubs">
-          <div class="col-8">
-
-              <div class="mx-auto tm-gallery-container" style="padding-right: 80px;">
-                <p class="text-center mb-4 tm-intro-text" style="color: rgb(255,255,255);">
-                  Cub Gallery<br></p>
-                  <div class="grid tm-gallery" >
-                    <a href="img/cubs/Cuc_orienteering.jpg">
-                      <figure class="effect-honey tm-gallery-item">
-                        <img src="img/cubs/Cuc_orienteering.jpg" alt="cubs" class="img-fluid">
-                      </figure>
-                    </a>
-                    <a href="img/cubs/cub_camp.jpg">
-                      <figure class="effect-honey tm-gallery-item">
-                        <img src="img/cubs/cub_camp.jpg" alt="cubs" class="img-fluid">
-                      </figure>
-                    </a>
-                    <a href="img/cubs/cubs_river.jpg">
-                      <figure class="effect-honey tm-gallery-item">
-                        <img src="img/cubs/cubs_river.jpg" alt="cubs" class="img-fluid" >
-                      </figure>
-                    </a>
-                    <a href="img/cubs/cub_planes.jpg">
-                      <figure class="effect-honey tm-gallery-item">
-                        <img src="img/cubs/cub_planes.jpg" alt="cubs" class="img-fluid">
-                      </figure>
-                    </a>
-                    <a href="img/cubs/cubs_river2.jpg">
-                      <figure class="effect-honey tm-gallery-item">
-                        <img src="img/cubs/cubs_river2.jpg" alt="cubs" class="img-fluid">
-
-                      </figure>
-                    </a>
-                    <a href="img/cubs/Cubs1.jpg">
-                      <figure class="effect-honey tm-gallery-item">
-                        <img src="img/cubs/Cubs1.jpg" alt="cubs" class="img-fluid">
-
-                      </figure>
-                    </a>
-                  </div>
+    <section id="video" style="background-color:rgb(0,184,164) ;">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4" style="color: rgb(116,20,220);">Videos</h2>
+              <p class="mx-auto tm-work-description">
+                <p class="mb-5 tm-intro-text"style="color: rgb(255,255,255);">
+                  </p>
+              </p>
+          </div>
+        </div>
+      <div class="videocontainer align-items-center" >
+        <div class="vidrow justify-content-center">
+              <div class="vidsmall-img-row">
+                <div class="vidsmall-img">
+                  <img src="img/explorers/explorers3.jpg">
+                  <img src="img/Icons/play.png" class="play-btn" onclick="playVideo('img/videos/Video.mp4')">
+                </div>
+                <p>Explorers get Invested in all sorts of wonderful places</p>
               </div>
           </div>
-          </div>
-         
-   
-        </div>
 
-  </section>
+         </div>
+      </div>
+
+      <div class="video-player" id="videoPlayer">
+        <video width="100%" target= "_parent" controls autoplay id="myVideo">
+          <source src="img/explorers/Video.mp4" target= "_parent" type="video/mp4">
+        </video>
+        <img src="img/Icons/close.png" class="close-btn" onclick="stopVideo()">
+      </div>
+    </div>
+    </section>
+
 
 
     <script src="js/jquery-1.9.1.min.js"></script>
