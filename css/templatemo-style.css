@@ -226,6 +226,10 @@ a:focus {
   margin-top: -80px;
 }
 
+.tm-hero-text-container-bar {
+  margin-top: 180px;
+}
+
 .tm-hero-title {
   font-size: 3.5rem;
   text-shadow: 2px 2px 2px #333;
